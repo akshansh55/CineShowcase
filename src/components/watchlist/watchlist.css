@@ -1,0 +1,17 @@
+.watchlist-card{
+    display: flex;
+   justify-content: space-between;
+}
+.watchlist-card-img img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.watchlist-heading-row ul{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: Gray;
+}
+

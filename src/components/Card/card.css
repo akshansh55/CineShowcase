@@ -1,0 +1,23 @@
+
+    .card-item{
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        border-radius: 50%;
+        object-fit: contain;
+        color: blue;
+        
+    }
+
+.card-item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.card-item .character{
+    font-family: cursive;
+    font-weight: bold;
+
+}

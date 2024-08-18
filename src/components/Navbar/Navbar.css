@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navbar img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+.movies-link{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 35px;
+    font-weight: bolder;
+    padding: 10px;
+}
+.watchlist-link{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 35px;
+    font-weight: bolder;
+    padding: 10px;
+}

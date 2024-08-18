@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.card-parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3{
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+}
