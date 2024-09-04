@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import watchList from './components/watchlist';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import './App.css';
-import { useState, useCallback, useRef } from 'react';
+import { useState } from 'react';
 import { Moviecontext } from './context/Moviecontext';
 import Movies from './components/Movies';
 import WatchListPage from './pages/WatchListPage';
@@ -16,27 +16,27 @@ import Navbar from './components/Navbar';
 
 function App() {
 
-  const [watchList, setWatchList] = useState(JSON.parse(localStorage.getItem('movies')));
-  // // const [count, setCount] = useState(0);
-  // // const [input, setInput] = useState("");
+  // const [watchList, setWatchList] = useState(JSON.parse(localStorage.getItem('movies')));
+  // // // const [count, setCount] = useState(0);
+  // // // const [input, setInput] = useState("");
 
-  console.log(watchList);
+  // console.log(watchList);
   // const increamentCount = useCallback(()=>setCount(count+1),[count]);
-  function handleAddToWatchList(movieObj){
-        const updatedWatchList = [...watchList, movieObj];
-        setWatchList(updatedWatchList);
-        localStorage.setItem('movies',JSON.stringify(updatedWatchList))
+  // function handleAddToWatchList(movieObj){
+  //       const updatedWatchList = [...watchList, movieObj];
+  //       setWatchList(updatedWatchList);
+  //       localStorage.setItem('movies',JSON.stringify(updatedWatchList))
         
-  }
+  // }
 
-  function handleRemoveFromWatchList(movieObj){
-    let filteredMovies = watchList.filter((movie)=>{
-      return movie.id !== movieObj.id
-    });
-    setWatchList(filteredMovies);
-    localStorage.setItem('movies',JSON.stringify(filteredMovies))
+  // function handleRemoveFromWatchList(movieObj){
+  //   let filteredMovies = watchList.filter((movie)=>{
+  //     return movie.id !== movieObj.id;
+  //   });
+  //   setWatchList(filteredMovies);
+  //   localStorage.setItem('movies',JSON.stringify(filteredMovies))
    
-  }
+  // }
  
   return (
   //   // <>
@@ -55,7 +55,7 @@ function App() {
     <div className='app'>
       <BrowserRouter>
         
-        <Moviecontext.Provider value={{watchList,handleAddToWatchList,handleRemoveFromWatchList,setWatchList}}>
+        {/* <Moviecontext.Provider value={{watchList,handleAddToWatchList,handleRemoveFromWatchList,setWatchList}}> */}
           <Navbar/>
             <Switch>
               {/* <Route path="/" render={()=>
@@ -66,7 +66,7 @@ function App() {
               <Route path="/watchlist" component={WatchListPage} exact= {true} /> 
               <Route component={NotfoundPage} />
             </Switch>
-        </Moviecontext.Provider>  
+        {/* </Moviecontext.Provider>   */}
       </BrowserRouter>
     </div>
     // const [count, setCount]=useState(0);
