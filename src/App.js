@@ -66,6 +66,11 @@ function App() {
               <Route path="/watchlist" component={WatchListPage} exact= {true} /> 
               <Route component={NotfoundPage} />
             </Switch>
+            <footer className="footer">
+                © 2024 CineSphere. All rights reserved.
+                        Unauthorized duplication or publication of any materials from this site is expressly prohibited.
+                        
+            </footer>
         {/* </Moviecontext.Provider>   */}
       </BrowserRouter>
     </div>
