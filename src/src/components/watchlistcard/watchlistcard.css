@@ -1,0 +1,19 @@
+.delete-button{
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.delete-button:hover::after{
+        content: "Delete From WatchList";
+        height: 10px;
+        width: 200px;
+        background-color: brown;
+}
+
+.watchlist-card-details{
+    display: flex;
+    justify-content: space-around;
+}

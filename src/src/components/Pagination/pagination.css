@@ -1,0 +1,29 @@
+.pagination{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+    
+}
+
+.prev{
+  background-color: rgb(150, 135, 135);
+  margin-bottom: 130px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 5px;
+
+}
+.next{
+    background-color:rgb(150, 135, 135);
+    margin-bottom: 130px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.page-number{
+   color: red;
+}
