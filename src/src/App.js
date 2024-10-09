@@ -67,7 +67,7 @@ function App() {
               <Route component={NotfoundPage} />
             </Switch>
             <footer className="footer">
-                © 2024 Your Company Name. All rights reserved.
+                © 2024 CineSphere. All rights reserved.
                         Unauthorized duplication or publication of any materials from this site is expressly prohibited.
                         
             </footer>
