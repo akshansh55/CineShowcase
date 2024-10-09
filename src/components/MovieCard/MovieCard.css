@@ -9,22 +9,27 @@
     width: 300px;
     height: 400px;
     border: 0.1 solid black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+    transition: 0.4s ease;
+    transform-origin: 50% 50%;
 }
 .card-img img{
-    position: absolute;
+    
     width: 300px;
     height: 300px;  
 }
 .card-title{
     position: absolute;
-    left: 50%;
-    top: 50%;
     color: white;
     background: black;
     opacity: 0.7;
-    transform: translate(-50%,-50%);
     width: 100%;
-    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 .card-overview{
     position: absolute;
@@ -34,14 +39,65 @@
 
 .movie-details-link{
     position: absolute;
-    left: 95%;
-    color: black;
+    left: 92%;
+    top:2px;
+    color:black;
     text-decoration: none;
-    background-color: red;
+    font-style: italic;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    padding-bottom: 2px;
 }
 .add-to-watchlist{
     position: absolute;
+    width: 40px;
+    height: 40px;  
+    top:300px;
+
+   
 }
 .remove-from-watchlist{
     position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 300px;
+}
+
+.add-to-watchlist:hover::after{
+    content: "ADD TO WATCHLIST";
+    position: absolute;   
+    width: 100px;
+    background-color: rgb(92, 79, 79);
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.remove-from-watchlist:hover::after{
+    content: "REMOVE FROM WATCHLIST";
+    position: absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(89, 87, 87);
+
+}
+
+.movie-details-link:hover::after{
+    content: "details";
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 110px;
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(89, 87, 87);
+
+}
+.movie-card:hover{
+    transform: scale(1.05);
+   
 }

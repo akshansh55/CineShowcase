@@ -26,8 +26,8 @@ function Movies() {
        
     },[pageNo])
     return (
-        <>
-            <h3>Trending Movies</h3>
+        <div className="movies">
+            <h3 className="movies-category-heading">Trending Movies</h3>
             <div className="card-parent">
                 {
                     movies.map((movie)=>{
@@ -37,7 +37,7 @@ function Movies() {
             </div>
             <Pagination handlenext={handlenext} handleprevious={handleprevious} pageNumber={pageNo}/>
         
-       </>
+       </div>
 
     )
 }

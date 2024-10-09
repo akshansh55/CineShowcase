@@ -1,6 +1,8 @@
 .navbar{
     display: flex;
     flex-wrap: nowrap;
+    color:rgb(187, 165, 165);
+    align-items: center;
 }
 
 .navbar img{
@@ -15,6 +17,8 @@
     font-size: 35px;
     font-weight: bolder;
     padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(248, 118, 12);
 }
 .watchlist-link{
     text-decoration: none;
@@ -22,4 +26,15 @@
     font-size: 35px;
     font-weight: bolder;
     padding: 10px;
+    color: rgb(248, 118, 12);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.company-title{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 35px;
+    font-weight: bolder;
+    padding: 10px;
+    color: rgb(248, 118, 12);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

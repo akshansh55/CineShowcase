@@ -4,7 +4,7 @@ import DetailsBanner from "../DetailsBanner";
 import { useParams } from "react-router-dom";
 
 function Details(){
-   let [details, setDetails] = useState([]);
+   const [details, setDetails] = useState([]);
     const {id} = useParams(); 
 
     useEffect(()=>{
@@ -22,7 +22,10 @@ function Details(){
         </div>
     )
 }
-
-
-
 export default Details;
+
+
+
+
+
+ 

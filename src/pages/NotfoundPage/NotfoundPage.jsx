@@ -1,7 +1,7 @@
 function NotfoundPage(){
     return(
         <div className="Notfound"> 
-            You seem Lost
+            404: NOT FOUND
         </div>
     )
 }

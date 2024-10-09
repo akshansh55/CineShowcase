@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 
  export const Moviecontext =createContext({
-   details:{},
+    details:{},
     watchList:[],
     setWatchList:()=>{},
     handleAddToWatchList:()=>{},

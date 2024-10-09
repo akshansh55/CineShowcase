@@ -8,3 +8,10 @@ body{
   display: block;
   background-color: rgb(23, 23, 23);
 }
+.footer{
+  background-color: black;
+  height: 100px;
+  color: white;
+  text-align: center;
+  align-content: center;
+}
